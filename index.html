@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>問い合わせフォーム動作検証用サイト</title>
+</head>
+<body>
+<h1>問い合わせフォーム動作検証用サイト</h1>
+<p>このページは、問い合わせフォームの動作を確認するための技術検証専用サイトです。実在する企業の問い合わせ先ではありません。ご連絡は不要です。</p>
+<form action="https://formspree.io/f/REPLACE_FORMSPREE_ID" method="POST">
+  <p><label>お名前<br><input type="text" name="name" required></label></p>
+  <p><label>メールアドレス<br><input type="email" name="email" required></label></p>
+  <p><label>件名<br><input type="text" name="subject" required></label></p>
+  <p><label>お問い合わせ本文<br><textarea name="message" rows="8" required></textarea></label></p>
+  <input type="hidden" name="test_id" value="GHP-FS-001">
+  <p><button type="submit">送信</button></p>
+</form>
+</body>
+</html>
